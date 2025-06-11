@@ -1,0 +1,67 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Game board */
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #fefefe;
+  border: 2px solid #6c63ff;
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 5px;
+}
+
+.square:hover {
+  background-color: #e0e7ff;
+  transform: scale(1.05);
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b0082;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Optional: Game container layout */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffffdd;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #222;
+}
